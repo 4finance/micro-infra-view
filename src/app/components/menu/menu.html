@@ -1,0 +1,3 @@
+<ul class="nav nav-pills nav-stacked" ng-repeat="(collaborator, definition) in allCollaborators">
+  <li ng-class="{'active': collaborator===current.collaborator.fullPath}"><a ng-click="select(collaborator)">{{collaborator}}</a></li>
+</ul>

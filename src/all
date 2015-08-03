@@ -1,0 +1,151 @@
+{
+    "com/omg/fraud/fraud-service": {
+        "http://192.168.64.162:8074": {
+            "collaborators": {},
+            "status": "UP"
+        }
+    },
+    "com/omg/fraud/fraud-service-pl": {
+        "http://192.168.64.162:8076": {
+            "collaborators": {},
+            "status": "UP"
+        }
+    },
+    "com/omg/loans/broker": {
+        "http://192.168.64.160:8098": {
+            "collaborators": {},
+            "status": "UP"
+        },
+        "http://192.168.64.161:8098": {
+            "collaborators": {},
+            "status": "UP"
+        }
+    },
+    "com/omg/loans/pl/backoffice-my-other-product-pl": {
+        "http://192.168.64.162:8030": {
+            "collaborators": {
+                "com/omg/fraud/fraud-service-pl": {
+                    "http://192.168.64.162:8076": "UP"
+                },
+                "com/omg/payments/payments-my-other-product": {
+                    "http://192.168.64.162:8213": "UP"
+                },
+                "com/omg/payments/pl/provider/provider-my-other-product-pl": {
+                    "http://192.168.64.160:8087": "UP",
+                    "http://192.168.64.161:8087": "UP"
+                },
+                "com/omg/pl/accounting-my-other-product-pl": {},
+                "com/omg/risk/risk-management-service-my-other-product": {
+                    "http://192.168.64.162:8148": "UP",
+                    "http://192.168.64.163:8148": "UP"
+                },
+                "com/omg/payco-adapter": {
+                    "http://192.168.64.162:8167": "UP"
+                }
+            },
+            "status": "UP"
+        }
+    },
+    "com/omg/loans/pl/backoffice-my-product-pl": {
+        "http://192.168.64.67:8101": {
+            "collaborators": {
+                "com/omg/fraud/fraud-service-pl": {
+                    "http://192.168.64.162:8076": "UP"
+                },
+                "com/omg/payments/pl/provider/provider-my-product-pl": {},
+                "com/omg/risk/risk-management-service-my-product": {}
+            },
+            "status": "UP"
+        }
+    },
+    "com/omg/loans/pl/call-center-leads": {
+        "http://192.168.64.160:8093": {
+            "collaborators": {},
+            "status": "UP"
+        }
+    },
+    "com/omg/loans/pl/call-center-tokens": {
+        "http://192.168.64.162:8096": {
+            "collaborators": {},
+            "status": "UP"
+        }
+    },
+    "com/omg/loans/pl/web-api-my-other-product-pl": {
+        "http://192.168.64.160:8115": {
+            "collaborators": {},
+            "status": "DOWN"
+        },
+        "http://192.168.64.161:8115": {
+            "collaborators": {},
+            "status": "DOWN"
+        }
+    },
+    "com/omg/loans/pl/web-my-product-pl": {
+        "http://192.168.64.160:8102": {
+            "collaborators": {},
+            "status": "UP"
+        },
+        "http://192.168.64.161:8102": {
+            "collaborators": {},
+            "status": "UP"
+        }
+    },
+    "com/omg/loans/web-api-auth-storage": {
+        "http://web1:8168/token": {
+            "collaborators": {},
+            "status": "DOWN"
+        },
+        "http://web2:8168/token": {
+            "collaborators": {},
+            "status": "DOWN"
+        }
+    },
+    "com/omg/payments/payments-my-other-product": {
+        "http://192.168.64.162:8213": {
+            "collaborators": {
+                "com/omg/loans/pl/backoffice-my-other-product-pl": {
+                    "http://192.168.64.162:8030": "UP"
+                }
+            },
+            "status": "UP"
+        }
+    },
+    "com/omg/payments/pl/provider/provider-my-other-product-pl": {
+        "http://192.168.64.160:8087": {
+            "collaborators": {},
+            "status": "UP"
+        },
+        "http://192.168.64.161:8087": {
+            "collaborators": {},
+            "status": "UP"
+        }
+    },
+    "com/omg/risk/risk-management-service-my-other-product": {
+        "http://192.168.64.162:8148": {
+            "collaborators": {
+                "com/omg/loans/pl/backoffice-my-other-product-pl": {
+                    "http://192.168.64.162:8030": "UP"
+                }
+            },
+            "status": "UP"
+        },
+        "http://192.168.64.163:8148": {
+            "collaborators": {
+                "com/omg/loans/pl/backoffice-my-other-product-pl": {
+                    "http://192.168.64.162:8030": "UP"
+                }
+            },
+            "status": "UP"
+        }
+    },
+    "com/omg/payco-adapter": {
+        "http://192.168.64.162:8167": {
+            "collaborators": {
+                "com/omg/loans/pl/backoffice-my-other-product-pl": {
+                    "http://192.168.64.162:8030": "UP"
+                }
+            },
+            "status": "UP"
+        }
+    }
+}

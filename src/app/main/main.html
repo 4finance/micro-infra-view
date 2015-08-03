@@ -1,0 +1,31 @@
+<div ng-include="'app/components/navbar/navbar.html'"></div>
+
+<div class="col-xs-12 col-md-3">
+  <menu all-collaborators="allCollaborators" current="current" parsed-response="parsedResponse"></menu>
+  <!--&lt;!&ndash;<ul class="nav nav-pills nav-stacked" ng-repeat="(collaborator, definition) in allCollaborators">&ndash;&gt;-->
+    <!--&lt;!&ndash;<li ng-class="{'active': collaborator===current.collaborator.fullPath}"><a ng-click="select(collaborator)">{{collaborator}}</a></li>&ndash;&gt;-->
+  <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+</div>
+
+<div class="col-xs-12 col-sm-9 col-md-6">
+  <div id="graph"></div>
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3">
+
+  <div class="panel panel-default" id="panel">
+    <div class="panel-heading">Collaborator details</div>
+    <div class="panel-body">
+      <span ng-show="!current.collaborator.address && !current.collaborator.path && !current.collaborator.status">Please select node</span>
+      <dl>
+        <dt ng-show="current.collaborator.path">Path</dt>
+        <dd ng-show="current.collaborator.path">{{current.collaborator.path}}</dd>
+        <dt ng-show="current.collaborator.status">Status</dt>
+        <dd ng-show="current.collaborator.status"><span class="label label-success">{{current.collaborator.status | uppercase}}</span></dd>
+        <dt ng-show="current.collaborator.address">Address</dt>
+        <dd ng-show="current.collaborator.address">{{current.collaborator.address}}</dd>
+        <dt ng-show="current.collaborator.address">Swagger</dt>
+        <dd ng-show="current.collaborator.address"><a href="http://{{current.collaborator.address}}/swagger">{{current.collaborator.address}}/swagger</a></dd>
+      </dl>
+    </div>
+  </div>
+</div>
