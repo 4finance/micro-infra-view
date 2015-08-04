@@ -10,5 +10,7 @@ npm install --global bower # if needed
 
 bower install
 
+npm update
+
 gulp serve
 ```
