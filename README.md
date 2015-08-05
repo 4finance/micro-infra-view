@@ -4,4 +4,13 @@
 View to micro-infra-spring collaborators.
 
 ## To run in "development" mode:
+```
+npm install --global gulp # if needed
+npm install --global bower # if needed
+
+bower install
+
+npm update
+
 gulp serve
+```
