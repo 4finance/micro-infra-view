@@ -21,6 +21,7 @@ function draw(data) {
     var $scope = angular.element($('#panel')).scope();
     $scope.current.collaborator = d;
     $scope.$apply();
+    console.log(d);
   };
 
   var svg = d3.select("#graph").append("svg")
@@ -85,6 +86,9 @@ function draw(data) {
     .attr("r", 8)
     .attr('class', function (d) {
       return d.status;
+    })
+    .attr('id', function (d) {
+      return d.fullPath.split("/").join("_");
     })
     .on("click", displayInfo)
     .on("mouseover", mouseover)

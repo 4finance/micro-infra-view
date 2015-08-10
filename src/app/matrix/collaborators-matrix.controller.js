@@ -6,7 +6,6 @@ angular.module('collaborators')
       $scope.current = {collaborator: {}};
 
       $scope.allCollaborators = collaborators.plain();
-      drawRadial(parseResponse($scope.allCollaborators));
-
+      drawMatrix(parseResponse($scope.allCollaborators));
     });
   });
