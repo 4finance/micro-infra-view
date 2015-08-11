@@ -17,8 +17,8 @@ angular.module('collaborators')
             if($scope.parsedResponse.nodes[node].fullPath===collaborator) {
               $scope.current.collaborator = $scope.parsedResponse.nodes[node];
               d3.select($scope.current.collaborator)[0][0].center = true;
-              console.log('highlight '+ collaborator.split("/").join("_"));
-              $("#"+collaborator.split("/").join("_")).style("fill","#00000-");
+              console.log(d3.select($scope.current.collaborator)[0][0]);
+              $("[id="+collaborator.split("/").join("_")+"]").attr("class", "highlight"+$scope.current.collaborator.status);
               force.resume();
             }
           }

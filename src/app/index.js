@@ -10,7 +10,7 @@ angular.module('collaborators', ['restangular', 'ui.router', 'ui.bootstrap'])
       })
       .state('matrix', {
         url: '/matrix',
-        templateUrl: 'app/main/main.html',
+        templateUrl: 'app/matrix/collaborators.html',
         controller: 'CollaboratorsMatrixCtrl'
       });
 

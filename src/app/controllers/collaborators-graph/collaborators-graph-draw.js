@@ -133,9 +133,12 @@ function draw(data) {
       d.fixed = false;
       d.x = (d.x * 299 + width/2) / 300;
       d.y = (d.y * 299 + height/2) / 300;
+
       if ((d.y - height/2) * (d.y - height/2) < 50 * 50 && ((d.x - width/2) * (d.x - width/2)) < 50 * 50) {
         d.center = false;
-
+        $("[id="+ d.fullPath.split("/").join("_")+"]").attr("class", d.status);
+      }else {
+        force.alpha(.01);
       }
     }
     return "translate(" + d.x + "," + d.y + ")";
