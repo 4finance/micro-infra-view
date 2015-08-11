@@ -55,15 +55,42 @@ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bo
 
 circle {
   stroke: black;
-  stroke-width: 0.6px;
+  stroke-opacity:0.5
 }
 
 circle.broken {
-  fill: lighten($brand-danger,10%);
+  fill: $brand-danger;
+  animation: strokenormalize 10s ease 1;
 }
 
 circle.working {
-  fill: lighten($brand-success,10%);
+  fill: $brand-success;
+  animation: strokenormalize 10s ease 1;
+}
+
+@keyframes strokeanimation {
+  0% { stroke-width: 0.6px; }
+  25% { stroke-width: 13.6px; }
+  50% { stroke-width: 0.6px; }
+  65% { stroke-width: 6.6px; }
+  100% { stroke-width: 0.6px; }
+}
+
+@keyframes strokenormalize {
+  5% {  stroke: black;}
+  100% {  stroke-width: 0.6px; }
+}
+
+circle.highlightworking {
+  fill: $brand-success;
+  stroke: $brand-success;
+  animation: strokeanimation 1s ease infinite;
+}
+
+circle.highlightbroken {
+  fill: $brand-danger;
+  stroke: $brand-danger;
+  animation: strokeanimation 1s ease infinite;
 }
 
 text {

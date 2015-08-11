@@ -1,8 +1,8 @@
 "use strict";
 
-function drawRadial(data) {
+function drawMatrix(data) {
 
-  var margin = {top: 80, right: 0, bottom: 10, left: 80},
+  var margin = {top: 0, right: 0, bottom: 10, left: 80},
     width = 720,
     height = 720;
 

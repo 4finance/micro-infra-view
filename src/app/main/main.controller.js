@@ -7,7 +7,6 @@ angular.module('collaborators')
       $scope.allCollaborators = collaborators.plain();
       $scope.parsedResponse = parseResponse($scope.allCollaborators);
       draw($scope.parsedResponse);
-      $log.debug($scope.parsedResponse);
     });
 
 
