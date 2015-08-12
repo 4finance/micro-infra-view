@@ -3,7 +3,7 @@
 describe('controllers', function(){
   var scope;
 
-  beforeEach(module('collaborators'));
+  beforeEach(module('microInfraView'));
 
   beforeEach(inject(function($rootScope) {
     scope = $rootScope.$new();

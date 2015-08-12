@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('collaborators', ['restangular', 'ui.router', 'ui.bootstrap'])
+angular.module('microInfraView', ['restangular', 'ui.router', 'ui.bootstrap'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {

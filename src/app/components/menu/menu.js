@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('collaborators')
+angular.module('microInfraView')
   .directive('menu', function () {
     return {
       restrict: 'E',
-      templateUrl: '/app/components/menu/menu.html',
+      templateUrl: 'app/components/menu/menu.html',
       scope: {
         'allCollaborators': '=',
         'current': '=',

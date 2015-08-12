@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module('collaborators')
+angular.module('microInfraView')
   .controller('MainCtrl', function ($scope, $log, Restangular) {
     Restangular.one('all').get().then( function(collaborators) {
       $scope.current = {collaborator:{}};

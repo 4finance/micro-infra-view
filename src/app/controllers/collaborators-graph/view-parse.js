@@ -25,7 +25,7 @@ function parseResponse(response) {
     }
 
     function iterateOverMap(map, entryCallbackFun) {
-        for (key in map) {
+        for (var key in map) {
             if (map.hasOwnProperty(key)) {
                 entryCallbackFun(key, map[key]);
             }
