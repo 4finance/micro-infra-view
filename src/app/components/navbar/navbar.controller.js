@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('collaborators')
+angular.module('microInfraView')
   .controller('NavbarCtrl', function ($scope, $state) {
     $scope.state = $state.current.name;
   });
