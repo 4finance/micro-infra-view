@@ -14,3 +14,5 @@ npm update
 
 gulp serve
 ```
+
+![](https://cloud.githubusercontent.com/assets/1497967/9237550/db33299a-414b-11e5-8911-37a99d48ad15.png)
