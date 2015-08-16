@@ -17,7 +17,7 @@
         <dt ng-show="current.collaborator.path">Path</dt>
         <dd ng-show="current.collaborator.path">{{current.collaborator.path}}</dd>
         <dt ng-show="current.collaborator.status">Status</dt>
-        <dd ng-show="current.collaborator.status"><span class="label label-success">{{current.collaborator.status | uppercase}}</span></dd>
+        <dd ng-show="current.collaborator.status"><collaborator-status status="current.collaborator.status"></collaborator-status></dd>
         <dt ng-show="current.collaborator.address">Address</dt>
         <dd ng-show="current.collaborator.address">{{current.collaborator.address}}</dd>
         <dt ng-show="current.collaborator.address">Swagger</dt>
