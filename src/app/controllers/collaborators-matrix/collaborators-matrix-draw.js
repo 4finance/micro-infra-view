@@ -2,7 +2,7 @@
 
 function drawMatrix(data) {
 
-  var margin = {top: 0, right: 0, bottom: 10, left: 80},
+  var margin = {top: 80, right: 80, bottom: 10, left: 80},
     width = 720,
     height = 720;
 
@@ -64,11 +64,11 @@ function drawMatrix(data) {
       .attr("x2", width);
 
     row.append("text")
-      .attr("x", -6)
+      .attr("x", 6)
       .attr("y", x.rangeBand() / 2)
       .attr("dy", ".32em")
-      .attr("text-anchor", "end")
-      .text(function(d, i) { return nodes[i].name; });
+      .attr("text-anchor", "start")
+      .text(function(d, i) { return nodes[i].path; });
 
     var column = svg.selectAll(".column")
       .data(matrix)
@@ -84,7 +84,7 @@ function drawMatrix(data) {
       .attr("y", x.rangeBand() / 2)
       .attr("dy", ".32em")
       .attr("text-anchor", "start")
-      .text(function(d, i) { return nodes[i].name; });
+      .text(function(d, i) { return nodes[i].path; });
 
     function row(row) {
       var cell = d3.select(this).selectAll(".cell")
@@ -132,6 +132,6 @@ function drawMatrix(data) {
     }
 
     var timeout = setTimeout(function() {
-      order("group");
+      order("count");
     }, 5000);
 }
