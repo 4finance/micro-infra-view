@@ -2,6 +2,10 @@
  *  If you want to override some bootstrap variables, you have to change values here.
  *  The list of variables are listed here bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss
  */
+$background-color:      #fff !default;
+$body-bg:               $background-color;
+$panel-bg:              $background-color;
+
 $brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
@@ -96,7 +100,7 @@ circle.highlightbroken {
 text {
   font: 10px sans-serif;
   pointer-events: none;
-  text-shadow: 0 1px 0 darken(#fff,4%), 1px 0 0 darken(#fff,10%), 0 -1px 0 darken(#fff,10%), -1px 0 0 #fff;
+  text-shadow: 0 1px 0 darken($background-color,4%), 1px 0 0 darken($background-color,10%), 0 -1px 0 darken($background-color,10%), -1px 0 0 $background-color;
 }
 
 .node circle {
