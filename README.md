@@ -3,7 +3,18 @@
 # micro-infra-view
 View to micro-infra-spring collaborators.
 
-## To run in "development" mode:
+##Docker :
+You can either fetch pre-build image from docker hub via 
+
+```docker pull nklmish/micro-infra-view```
+
+Or build docker image locally(useful for development purpose)
+
+```docker build -t nklmish/micro-infra-view .```
+
+## Manual Installation:
+You can install everything locally on your machine by executing the following commands
+
 ```
 npm install --global gulp # if needed
 npm install --global bower # if needed
