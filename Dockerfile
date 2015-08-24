@@ -14,5 +14,4 @@ EXPOSE 3000
 EXPOSE 3001
 
 WORKDIR "/micro-infra-view"
-#ENTRYPOINT ["gulp serve:dist"]
 CMD ["gulp", "serve"]

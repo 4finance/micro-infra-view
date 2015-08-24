@@ -22,7 +22,7 @@ Depending on docker installation, we can find **dockerIpAddress** using one of t
 2. Boot2docker : ```boot2docker ip```
 3. Docker Toolbox : ```docker-machine ip <machine>```
 
-Open browser and type **dockerIpAddress:3000** (Note: replace dockerIpAddress with actual IP address allocated to ) 
+Open browser and type **dockerIpAddress:3000** (Note: replace dockerIpAddress with actual IP address allocated to docker ) 
 
 ## Manual Installation:
 You can install everything locally on your machine by executing the following commands
