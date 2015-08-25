@@ -8,11 +8,11 @@ You can either fetch pre-build image from docker hub via
 
 ```docker pull nklmish/4finance-micro-infra-view```
 
-Or build docker image locally(useful for development purpose)
+Or build docker image locally (useful for development purpose)
 
 ```docker build -t nklmish/4finance-micro-infra-view .```
 
-Once docker image is installed locally, we need to deploy it on docker by executing
+Once docker image is installed locally, we need to execute
 
 ```docker run -i -t -d -p 3000:3000 nklmish/4finance-micro-infra-view```
 
@@ -22,7 +22,7 @@ Depending on docker installation, we can find **dockerIpAddress** using one of t
 2. Boot2docker : ```boot2docker ip```
 3. Docker Toolbox : ```docker-machine ip <machine>```
 
-Open browser and type **dockerIpAddress:3000** (Note: replace dockerIpAddress with actual IP address allocated to docker ) 
+Open browser and type **dockerIpAddress:3000** (Note: replace dockerIpAddress with actual IP address allocated to docker) 
 
 ## Manual Installation:
 You can install everything locally on your machine by executing the following commands
